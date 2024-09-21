@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <script src="./app.js" defer></script>  
+    <link rel="stylesheet" href="./output.css">
+    <title>BMI calculator`</title>
+</head>
+<body class="text-white">
+    <div class="w-screen h-screen  bg-slate-500 flex justify-center items-center flex-wrap">
+        <div class="flex flex-col gap-5 text-center items-center">
+            <h1 class=" font-bold text-5xl">BMI calculator</h1>
+            <label class="flex justify-between w-full" for="weight">Enter weight in kg:
+                <input type="number" name="weight" id="weight" class="bg-slate-400">
+            </label>
+            <label for="height">Enter height in meter:
+                <input type="number" name="height" id="height" class="bg-slate-400">
+            </label>
+            <button class="py-1 px-3 bg-blue-800  w-fit h-fit border rounded-md shadow-black hover:bg-blue-600" >Calculate</button>
+            <span>BMI < 18.5 => UNDER weight</span>
+            <span>18.5 < BMI < 26 => normal</span>
+            <span> BMI > 26 => OVER weight</span>
+        </div>
+    </div>
+    
+
+
+
+
+    <style>
+        /* * {
+            border: 1px solid black;
+        } */
+        * {
+    border: 1px solid black;
+}
+*:where(span, a, b, em, i, strong, img) {
+    border-color: red;
+}
+
+
+    </style>
+</body>
+</html>
