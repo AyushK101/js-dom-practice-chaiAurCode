@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>currency-converter</title>
+    <link rel="stylesheet" href="./output.css">
+    <script src="./app.js" defer></script>
+</head>
+<body>
+    <div class="main w-screen h-screen flex  justify-center items-center bg-slate-700 text-white text-2xl">
+        <form action="" class=" flex flex-col  gap-4 items-center justify-center " >
+            <label for="">Enter amount: 
+                <input type="number" name="amount" id="amount" value="1" class="text-black">
+            </label>
+            <div class="dropdown flex">
+                <div class="from">
+                    <div class="select-from-container flex gap-2 items-center">
+                        <p>form</p>
+                        <img src="https://flagsapi.com/BE/flat/64.png">
+                        <select name="from" id="" class="text-black"></select>
+                    </div>
+                </div>
+                <div class="to">
+                    <div class="select-to-container flex gap-2 items-center">
+                    <p>to</p>   
+                        <img src="https://flagsapi.com/IN/flat/64.png">
+                        <select name="to" id="" class="text-black"></select>
+                    </div>
+                </div>
+            </div>
+            <div class="msg"> </div>
+            <button class="btn border bg-blue-700 rounded-lg px-4 py-2">GET EXCHANGE RATE</button>
+        </div>
+
+        </form>
+    </div>
+    <script src="./codes.js" ></script>
+
+</body>
+</html>
